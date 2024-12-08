@@ -1,0 +1,34 @@
+[project]
+name = "ddf_lib"
+version = "0.1"
+description = "Python library for DesignBuilder's DDF files"
+authors = [
+    { name = "Bartlomiej Tokarzewski", email = "bartlomiej.tokarzewski@gmail.com" },
+]
+dependencies = ["pandas"]
+
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/tokarzewski/ddf_lib"
+"Bug Tracker" = "https://github.com/tokarzewski/ddf_lib/issues"
+
+[tool.setuptools]
+packages = ["ddf_lib"]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "mypy"]
+
+[tool.pytest.ini_options]
+pythonpath = ["C:/GitHub/ddf_lib"]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["ddf_lib"]
+
+[tool.flake8]
+max-line-length = 88
+exclude = [".git", "__pycache__", "docs", "build", "dist"]
+
+[tool.black]
+line-length = 88

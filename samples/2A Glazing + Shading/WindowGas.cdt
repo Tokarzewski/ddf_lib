@@ -1,0 +1,4 @@
+#78 #79 #80 #81 #82 #83 #546 #1015 
+#Id #Name #CategoryId #Thickness #GasDefinition #ConductivityCoefficientA #ConductivityCoefficientB #ConductivityCoefficientC #ViscosityCoefficientA #ViscosityCoefficientB #ViscosityCoefficientC #SpecificHeatCoefficientA #SpecificHeatCoefficientB #SpecificHeatCoefficientC #MolecularWeight #SpecificHeatRatio #IsAir #FractionAir #IsArgon #FractionArgon #IsKrypton #FractionKrypton #IsXenon #FractionXenon #IsCustom #Source #Description #Locked #Scratch 
+#10000  #BESTEST AIR 13MM  #1  #13  #1-Single Gas  #2.41e-2  #7.6e-5  #  #1.73e-5  #1.0e-7  #  #0.72  #1.8e-3  #  #22  #1  #1  #0.25  #1  #0.25  #1  #0.25  #1  #0.25  #0  #EnergyPlus dataset  #  #  #11/10/2024 11:57:36  
+#10001  #ARGON/AIR 90/10 14MM  #8  #14  #1-Single Gas  #.002285  #.00005149  #0  #.000003397  #.0000000645  #0  #521.929  #0  #0  #39.948  #1.5  #1  #.1  #1  #.9  #0  #.001  #0  #.001  #0  #BS EN 673 / E+  #-  #0  #11/10/2024 11:57:36    

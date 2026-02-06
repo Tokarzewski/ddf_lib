@@ -1,0 +1,41 @@
+<!--
+This is a template .csproj for VSTO Excel Add-in.
+To use this project:
+1. Open Visual Studio 2019+
+2. Create new "Excel VSTO Add-in" project named "ExcelDDFAddin"
+3. Replace the generated files with these files
+4. Add reference to DDFLib project
+5. Build and deploy
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference to DDFLib -->
+    <ProjectReference Include="..\DDFLib\DDFLib.csproj" />
+
+    <!-- VSTO and Office references (added by Visual Studio) -->
+    <!-- <Reference Include="Microsoft.Office.Tools.Excel" /> -->
+    <!-- <Reference Include="Microsoft.Office.Interop.Excel" /> -->
+    <!-- <Reference Include="Microsoft.CSharp" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="ThisAddIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DDFManager.cs" />
+    <Compile Include="ExcelHelpers.cs" />
+    <Compile Include="DDFRibbon.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DDFRibbon.xml" />
+  </ItemGroup>
+
+</Project>
